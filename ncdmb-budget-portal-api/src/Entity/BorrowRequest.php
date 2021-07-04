@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="borrow_request", indexes={@ORM\Index(name="fk_borrow_request_department1_idx", columns={"department_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class BorrowRequest
 {

@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="training", indexes={@ORM\Index(name="fk_training_training_venues1_idx", columns={"training_venues_id"}), @ORM\Index(name="fk_training_travel_feeding1_idx", columns={"travel_feeding_id"}), @ORM\Index(name="fk_training_user1_idx", columns={"user_id"}), @ORM\Index(name="fk_training_training_location1_idx", columns={"training_location_id"}), @ORM\Index(name="fk_training_travel_accomodation1_idx", columns={"travel_accomodation_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class Training
 {

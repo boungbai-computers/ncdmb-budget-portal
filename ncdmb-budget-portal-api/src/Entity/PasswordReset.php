@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="password_reset", indexes={@ORM\Index(name="fk_Password_reset_user1_idx", columns={"user_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class PasswordReset
 {

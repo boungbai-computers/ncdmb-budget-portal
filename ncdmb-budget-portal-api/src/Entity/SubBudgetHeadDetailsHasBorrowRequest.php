@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="sub_budget_head_details_has_borrow_request", indexes={@ORM\Index(name="fk_sub_budget_head_details_has_borrow_request_sub_budget_he_idx", columns={"sub_budget_head_details_id"}), @ORM\Index(name="fk_sub_budget_head_details_has_borrow_request_borrow_reques_idx", columns={"borrow_request_id"}), @ORM\Index(name="fk_sub_budget_head_details_has_borrow_request_process_statu_idx", columns={"process_status_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class SubBudgetHeadDetailsHasBorrowRequest
 {

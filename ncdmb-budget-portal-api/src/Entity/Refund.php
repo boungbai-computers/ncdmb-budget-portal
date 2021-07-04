@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="refund", indexes={@ORM\Index(name="fk_refund_training1_idx", columns={"training_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class Refund
 {

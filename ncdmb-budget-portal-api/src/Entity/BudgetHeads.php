@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="budget_heads", indexes={@ORM\Index(name="fk_budget_heads_user1_idx", columns={"user_id"}), @ORM\Index(name="fk_budget_heads_process_status1_idx", columns={"process_status_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class BudgetHeads
 {

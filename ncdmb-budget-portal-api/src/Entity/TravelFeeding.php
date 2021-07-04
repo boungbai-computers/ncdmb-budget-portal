@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +10,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="travel_feeding", indexes={@ORM\Index(name="fk_travel_feeding_feeding_periods1_idx", columns={"feeding_periods_id"})})
  * @ORM\Entity
+ * @ApiResource()
  */
 class TravelFeeding
 {
