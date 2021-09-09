@@ -1,0 +1,576 @@
+#admin-page {
+  display: flex;
+  background: #e5e5e5;
+  height: 100vh;
+}
+
+.sidebar {
+  background: white;
+  height: 100vh;
+}
+
+.sidebar .logo-container {
+  text-align: center;
+  background: #ffff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sidebar .logo-container img {
+  width: 80px;
+}
+
+.sidebar .logo-container h3 {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+.sidebar .menu-bar {
+  background: rgba(70, 70, 70, 0.87);
+  padding: 20px;
+}
+
+.sidebar .menu-bar .nav-group {
+  padding: 20px;
+  border-bottom: 1px solid rgba(242, 242, 242, 0.08);
+}
+
+.sidebar .menu-bar .nav-group .link {
+  color: white;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.sidebar .menu-bar .nav-group .link::before {
+  content: "\2794";
+  margin-right: 5px;
+  font-size: 10px;
+}
+
+.sidebar .menu-bar .nav-group .sub-group {
+  line-height: 20px;
+  text-align: justify;
+}
+
+.sidebar .menu-bar .nav-group .sub-group .nav-link {
+  font-size: 12px;
+  display: block;
+  font-weight: 900;
+  color: #c2c2c2;
+  margin-left: 15px;
+}
+
+#admin-page #componentWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-top: 40px;
+  width: 60%;
+}
+
+#admin-page #componentWrapper #gistContainer {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 23px;
+  padding: 3%;
+  align-items: center;
+  width: 100% !important;
+  display: flex;
+}
+
+#admin-page #componentWrapper #gistContainer h2 {
+  font-weight: 900;
+  font-size: 30px;
+  width: 20%;
+  padding-left: 30px;
+  color: rgba(0, 0, 0, 0.74);
+}
+
+#admin-page #componentWrapper #gistContainer .carousel {
+  display: flex !important;
+  width: 80%;
+  justify-content: center !important;
+}
+
+#admin-page #componentWrapper #gistContainer .carousel .carouselContent {
+  width: 150px;
+  height: 150px;
+  background: #e5e5e5;
+  margin: 0px 10px;
+}
+
+#admin-page #componentWrapper .cardsDiv {
+  margin-top: 20px;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card {
+  background: #ffffff;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.12);
+  border-radius: 23px;
+  width: 49%;
+  display: flex;
+  overflow: hidden;
+  align-items: center !important;
+  margin-bottom: 4px;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card .grouptxt {
+  padding: 0px 5%;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card .grouptxt h3 {
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card .grouptxt hr {
+  width: 80px;
+  background: rgba(0, 0, 0, 0.08);
+  margin-bottom: 12px;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card i {
+  font-size: 150px;
+  top: 5%;
+  left: 5%;
+  bottom: 5%;
+  right: 5%;
+  position: relative;
+  color: rgba(1, 86, 5, 0.85);
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card1 h3 {
+  font-weight: 900;
+  color: rgba(1, 86, 5, 0.85);
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card2 h3 {
+  font-weight: 900;
+  color: #e0bd06;
+}
+#admin-page #componentWrapper .cardsDiv .cardGroup .card3 h3 {
+  font-weight: 900;
+  color: #e0bd06;
+}
+
+#admin-page #componentWrapper .cardsDiv .cardGroup .card4 h3 {
+  font-weight: 900;
+  color: rgba(1, 86, 5, 0.85);
+}
+
+.new-budget-section {
+  width: 100%;
+  background: #e5e5e5;
+  display: flex;
+  height: 100vh;
+}
+
+.new-budget-content {
+  margin: 50px 25px;
+  width: 50%;
+  /* position: initial; */
+}
+
+.new-budget-content h3 {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(224, 189, 6, 0.8);
+}
+
+.new-budget-content h3 span {
+  color: rgba(1, 86, 5, 0.85);
+}
+
+.new-budget-content small {
+  font-weight: 900;
+  color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
+}
+
+.new-budget-content .inputGroup {
+  display: flex;
+}
+
+.new-budget-content input {
+  outline: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.34);
+  opacity: 0.6;
+  margin-bottom: 10px;
+  width: 50%;
+  margin-left: 15px;
+  background: transparent;
+  padding-bottom: 10px;
+}
+
+.new-budget-content textarea {
+  outline: none;
+  height: 80px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.34);
+  opacity: 0.6;
+  resize: none;
+  margin-left: 12px;
+  background: transparent;
+  width: 90%;
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+
+.new-budget-content .newBudgetbtn {
+  display: block;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 23px;
+  background: none;
+  border: 4px solid rgba(1, 86, 5, 0.63);
+  border-radius: 50px;
+  width: 130px;
+  padding: 8px;
+  margin-top: 20px;
+  color: rgba(1, 86, 5, 0.63);
+  cursor: pointer;
+}
+
+.makeClaimDiv .form input::placeholder {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.24);
+}
+
+.toTop {
+  margin-top: 60px;
+  margin-left: 15%;
+}
+
+.toTop small {
+  font-weight: 900;
+  color: rgba(68, 67, 67, 0.25);
+}
+
+.loanContainer {
+  margin-top: 20px;
+}
+
+.loanContainer .loanDetails {
+  background: #ffffff;
+  margin: 15px 0px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05));
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 850px;
+  /* height: 58px; */
+}
+
+.loanContainer .loanDetails h4 {
+  font-weight: 900;
+  color: rgba(1, 86, 5, 0.63);
+  font-size: 15px;
+}
+
+.loanContainer .loanDetails h4 span {
+  color: rgba(224, 189, 6, 0.8);
+}
+
+.loanContainer .loanDetails a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  #admin-page {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .sidebar {
+    height: 95vh;
+  }
+
+  .sidebar .logo-container {
+    text-align: center;
+    background: #ffff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .sidebar .logo-container img {
+    width: 80px;
+  }
+
+  .sidebar .logo-container h3 {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.74);
+  }
+
+  .sidebar .menu-bar {
+    background: rgba(70, 70, 70, 0.87);
+    padding: 20px;
+  }
+
+  .sidebar .menu-bar .nav-group {
+    padding: 20px;
+    border-bottom: 1px solid rgba(242, 242, 242, 0.08);
+  }
+
+  .sidebar .menu-bar .nav-group .link {
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .sidebar .menu-bar .nav-group .link::before {
+    content: "\2794";
+    margin-right: 5px;
+    font-size: 10px;
+  }
+
+  .sidebar .menu-bar .nav-group .sub-group {
+    line-height: 20px;
+    text-align: justify;
+  }
+
+  .sidebar .menu-bar .nav-group .sub-group .nav-link {
+    font-size: 12px;
+    display: block;
+    font-weight: 900;
+    color: #c2c2c2;
+    margin-left: 15px;
+  }
+
+  #admin-page #componentWrapper {
+    flex-direction: column !important;
+    margin: auto;
+    /* width: 80%; */
+  }
+
+  #admin-page #componentWrapper #gistContainer {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  #admin-page #componentWrapper #gistContainer h2 {
+    font-weight: 900;
+    font-size: 30px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.74);
+  }
+
+  #admin-page #componentWrapper #gistContainer .carousel {
+    flex-direction: column;
+  }
+
+  #admin-page #componentWrapper #gistContainer .carousel .carouselContent {
+    width: 150px;
+    height: 150px;
+    background: #e5e5e5;
+    margin: 10px auto;
+  }
+
+  #admin-page #componentWrapper .cardsDiv {
+    margin: 10px auto;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup {
+    flex-direction: column;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card {
+    width: 130%;
+    margin: 10px auto;
+    flex-direction: column;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card .grouptxt {
+    flex-direction: column !important;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card .grouptxt h3 {
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card .grouptxt hr {
+    width: 80px;
+    background: rgba(0, 0, 0, 0.08);
+    margin-bottom: 12px;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card i {
+    font-size: 150px;
+    top: 5%;
+    left: 5%;
+    bottom: 5%;
+    right: 5%;
+    position: relative;
+    color: rgba(1, 86, 5, 0.85);
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card1 h3 {
+    font-weight: 900;
+    color: rgba(1, 86, 5, 0.85);
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card2 h3 {
+    font-weight: 900;
+    color: #e0bd06;
+  }
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card3 h3 {
+    font-weight: 900;
+    color: #e0bd06;
+  }
+
+  #admin-page #componentWrapper .cardsDiv .cardGroup .card4 h3 {
+    font-weight: 900;
+    color: rgba(1, 86, 5, 0.85);
+  }
+
+  .new-budget-section {
+    flex-direction: column;
+  }
+
+  .new-budget-content {
+    width: 100%;
+  }
+
+  .new-budget-content h3 {
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: rgba(224, 189, 6, 0.8);
+  }
+
+  .new-budget-content h3 span {
+    color: rgba(1, 86, 5, 0.85);
+  }
+
+  .new-budget-content small {
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.2);
+    margin-bottom: 25px;
+  }
+
+  .new-budget-content .inputGroup {
+    display: flex;
+  }
+
+  .new-budget-content input {
+    outline: none;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.34);
+    opacity: 0.6;
+    margin-bottom: 10px;
+    width: 50%;
+    margin-left: 15px;
+    background: transparent;
+    padding-bottom: 10px;
+  }
+
+  .new-budget-content textarea {
+    outline: none;
+    height: 80px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.34);
+    opacity: 0.6;
+    resize: none;
+    margin-left: 12px;
+    background: transparent;
+    width: 90%;
+    margin-top: 25px;
+    padding-bottom: 10px;
+  }
+
+  .new-budget-content .newBudgetbtn {
+    display: block;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 23px;
+    background: none;
+    border: 4px solid rgba(1, 86, 5, 0.63);
+    border-radius: 50px;
+    width: 130px;
+    padding: 8px;
+    margin-top: 20px;
+    color: rgba(1, 86, 5, 0.63);
+    cursor: pointer;
+  }
+
+  .makeClaimDiv .form input::placeholder {
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.24);
+  }
+
+  .toTop {
+    margin-top: 60px;
+    margin-left: 15%;
+  }
+
+  .toTop small {
+    font-weight: 900;
+    color: rgba(68, 67, 67, 0.25);
+  }
+
+  .loanContainer {
+    margin-top: 20px;
+  }
+
+  .loanContainer .loanDetails {
+    background: #ffffff;
+    margin: 15px 0px;
+    border-radius: 50px;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05));
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 850px;
+    /* height: 58px; */
+  }
+
+  .loanContainer .loanDetails h4 {
+    font-weight: 900;
+    color: rgba(1, 86, 5, 0.63);
+    font-size: 15px;
+  }
+
+  .loanContainer .loanDetails h4 span {
+    color: rgba(224, 189, 6, 0.8);
+  }
+
+  .loanContainer .loanDetails a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 19px;
+    color: rgba(0, 0, 0, 0.25);
+  }
+}

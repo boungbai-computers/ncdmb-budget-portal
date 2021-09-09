@@ -1,0 +1,806 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  font-family: Roboto, sans-serif !important;
+}
+
+input {
+  border: none;
+}
+
+body {
+  width: 100%;
+}
+
+.banner {
+  height: 100vh;
+  width: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .top-content {
+  width: 100%;
+  display: flex;
+  margin-top: -100px;
+  margin-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .top-content img {
+  width: 5%;
+}
+
+.banner .top-content h2 {
+  font-family: Roboto;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.banner .middle-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .middle-content .imgDiv {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  top: 248px;
+  background: #ffffff;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.2);
+}
+
+.banner .middle-content img {
+  height: 400px;
+  left: 8%;
+  position: relative;
+  transform: translateX(-50%, -50%);
+  top: 5%;
+}
+
+.banner .middle-content section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .middle-content .middle-text {
+  position: relative;
+  width: 497px;
+  height: 183px;
+  left: 25px;
+}
+
+.banner .middle-content .middle-text h1 {
+  font-size: 80px;
+  font-family: Roboto;
+  font-weight: 900;
+  font-style: normal;
+  color: rgba(1, 86, 5);
+  margin-bottom: -7px;
+}
+
+.banner .middle-content .middle-text h3 {
+  font-size: 53px;
+  color: rgba(224, 189, 6);
+  font-weight: 900;
+  margin-left: 70px;
+}
+
+.banner .middle-content .btnDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 10%;
+  margin-top: -5%;
+}
+
+.btnDiv .btn {
+  text-align: center;
+  padding: 8px;
+  width: 120px;
+  text-decoration: none;
+  outline: none;
+  font-weight: 900;
+  font-family: Roboto;
+  border-radius: 50px;
+}
+
+.btnDiv .loginBtn {
+  margin-right: 11px;
+  right: 300px;
+  top: 420px;
+  transition: ease-in-out all 0.3s;
+  color: #ffffff;
+  border: 5px solid rgba(1, 86, 5, 0.85);
+  color: rgba(1, 86, 5, 0.85);
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+}
+
+.btnDiv .loginBtn:hover {
+  background: rgba(1, 86, 5);
+  color: white;
+}
+
+.btnDiv .signupBtn {
+  left: 960px;
+  top: 420px;
+  color: #ffffff;
+  background: rgba(224, 189, 6, 0.8);
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  transition: ease-in-out all 0.3s;
+}
+
+.btnDiv .signupBtn:hover {
+  background: rgba(224, 189, 6);
+}
+
+/* Sign Up Page */
+.sign-up-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+  height: 100vh !important;
+}
+
+.sign-up-wrapper .sign-up-container {
+  background: rgba(229, 229, 229, 0.7);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.sign-up-wrapper .sign-up-container img {
+  position: absolute;
+  z-index: -1;
+  height: 100vh !important;
+  object-fit: cover;
+  /* width: 1000px; */
+  width: 220%;
+}
+
+.sign-up-wrapper .signup-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 30px;
+}
+
+.sign-up-wrapper .signup-content #logoDiv {
+  padding: 30px;
+}
+
+.sign-up-wrapper .signup-content #logoDiv img {
+  width: 95px;
+  margin-top: 100px;
+}
+
+.sign-up-wrapper .signup-content #formDiv {
+  width: 100%;
+  text-align: center;
+  /* margin: auto; */
+}
+
+.sign-up-wrapper .signup-content #formDiv .txtGroup {
+  line-height: 30px;
+}
+
+.sign-up-wrapper .signup-content #formDiv .txtGroup h6 {
+  font-weight: 900;
+  font-size: 50px;
+  color: #e0bd06;
+  text-align: center;
+}
+
+.sign-up-wrapper .signup-content #formDiv .txtGroup p {
+  font-weight: 900;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.sign-up-wrapper .signup-content #formDiv input {
+  display: block;
+  width: 400px;
+  background: rgba(196, 196, 196, 0.31);
+  border-radius: 30px;
+  padding: 15px;
+  margin: 8px auto !important;
+  outline: none;
+}
+
+.sign-up-wrapper .signup-content #formDiv input::placeholder {
+  color: rgba(0, 0, 0, 0.24);
+  font-weight: 900;
+}
+
+.sign-up-wrapper .signup-content #formDiv #signupBtn {
+  border: 5px solid #e0bd06;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+  background: transparent;
+  width: 120px;
+  font-size: 16px;
+  color: #e0bd06;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px;
+  transition: ease-in-out all 0.3s;
+}
+
+.sign-up-wrapper .signup-content #formDiv #signupBtn:hover {
+  color: white;
+  background: #e0bd06;
+}
+
+.error {
+  color: red;
+  transition: ease all 0.3s;
+  margin: 5px 20px;
+  display: block;
+}
+
+/* Login Page */
+.login-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 80px; */
+  align-items: center;
+  width: 100%;
+  height: 100vh !important;
+}
+
+.login-wrapper .login-container {
+  background: rgba(229, 229, 229, 0.7);
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-wrapper .login-container img {
+  position: absolute;
+  z-index: -1;
+  height: 100vh !important;
+  object-fit: cover;
+  /* width: 1000px; */
+  width: 220%;
+}
+
+.login-wrapper .login-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+#head-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  margin-bottom: 15px;
+}
+
+#head-container .logo {
+  width: 12%;
+  margin-left: 18%;
+}
+
+#head-container h6 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.login-wrapper .login-content .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.login-wrapper .login-content .login-form .textGroup {
+  text-align: center;
+}
+
+.login-wrapper .login-content .login-form .textGroup h6 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  color: #015605;
+}
+
+.login-wrapper .login-content .login-form .textGroup p {
+  font-weight: 900;
+  margin-bottom: 5px;
+  text-align: center;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.login-wrapper .login-form input {
+  display: block;
+  width: 400px;
+  background: rgba(196, 196, 196, 0.31);
+  border-radius: 30px;
+  padding: 15px;
+  margin: 20px auto !important;
+  outline: none;
+}
+
+.login-wrapper .login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.24);
+  font-weight: 900;
+}
+
+.login-wrapper .login-form .loginBtn {
+  border: 5px solid #015605;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  border-radius: 50px;
+  background: transparent;
+  height: 50px;
+  width: 100px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #015605;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  margin: auto;
+  transition: 0.3s ease-in-out all;
+  font-weight: 900;
+}
+
+.login-wrapper .login-form .loginBtn:hover {
+  background: #015605;
+  color: white;
+}
+
+.staff-container {
+  width: 100%;
+  height: 100vh;
+  background: #e5e5e5 !important;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  background: white;
+  padding: 20px;
+}
+
+.container1 img {
+  width: 114.23px;
+  height: 109.68px;
+}
+
+.container1 h4 {
+  width: 114.23px;
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.container2 {
+  background: rgba(70, 70, 70, 0.84);
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 75px;
+}
+
+.staff-container .middleContent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  padding: 60px;
+}
+
+.staff-container .middleContent .contentDiv {
+  width: 300px;
+  background: #ffffff;
+  box-shadow: 0px 40px 80px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 30px;
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.staff-container .middleContent .contentDiv i {
+  font-size: 150px;
+}
+
+.staff-container .middleContent .contentDiv #staffBtn {
+  display: flex;
+  background: none;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: 50px;
+  cursor: pointer !important;
+  border-radius: 50px;
+  width: 150px;
+  transition: ease-in-out 0.3s;
+}
+
+.staff-container .middleContent .contentDiv .makeClaim-btn {
+  color: rgba(1, 86, 5, 0.63);
+  border: 4px solid rgba(1, 86, 5, 0.63);
+}
+
+.staff-container .middleContent .contentDiv .makeClaim-btn:hover {
+  color: white;
+  background: rgba(1, 86, 5) !important;
+}
+
+.staff-container .middleContent .contentDiv .trackClaim-btn {
+  border: 4px solid rgba(224, 189, 6, 0.8);
+  color: rgb(224, 198, 6);
+}
+
+.staff-container .middleContent .contentDiv .trackClaim-btn:hover {
+  color: white;
+  background: rgb(224, 198, 6) !important;
+}
+
+.makeClaimDiv {
+  margin: 30px 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.makeClaimDiv .claimText h4 {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 0em;
+  color: #015605;
+  text-align: left;
+}
+
+.makeClaimDiv .claimText small {
+  font-weight: 900;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.47);
+}
+
+.trackClaim {
+  background: #e5e5e5;
+  height: 100vh;
+  width: 100%;
+}
+
+.trackClaim #claimContainer {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  flex-direction: column;
+}
+
+.trackClaim #claimContainer h4 {
+  font-weight: 900;
+  margin-left: 25%;
+  font-size: 30px;
+  display: inline-flex;
+  color: #e0bd06;
+}
+
+.trackClaim #claimContainer .contentWrapper {
+  display: block;
+  margin: 8px auto;
+}
+
+.trackClaim #claimContainer #content {
+  background: #ffffff;
+  border-radius: 50px;
+  width: 600px;
+  display: flex;
+  margin: 20px 0px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+  filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05));
+}
+
+.trackClaim #claimContainer #content h5 {
+  color: rgba(0, 0, 0, 0.74);
+  font-size: 15px;
+}
+
+.trackClaim #claimContainer #content a {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    flex-direction: row;
+    overflow-x: hidden;
+  }
+
+  .banner .top-content {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .banner .top-content img {
+    width: 10%;
+  }
+
+  .banner .top-content h2 {
+    font-size: 20px;
+  }
+
+  .banner .middle-content {
+    flex-direction: column;
+  }
+
+  .banner .middle-content .imgDiv {
+    width: 250px;
+    height: 250px;
+  }
+
+  .banner .middle-content img {
+    height: 250px;
+    left: 8%;
+    position: relative;
+    top: 10%;
+  }
+
+  .banner .middle-content section {
+    flex-direction: column;
+  }
+
+  .banner .middle-content .middle-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: inherit;
+    margin-top: -30px;
+  }
+
+  .banner .middle-content .middle-text h1 {
+    font-size: 60px;
+  }
+
+  .banner .middle-content .middle-text h3 {
+    font-size: 40px;
+    color: rgba(224, 189, 6);
+    font-weight: 900;
+    text-align: center;
+    position: inherit;
+    margin-left: -10px;
+  }
+
+  .banner .middle-content .btnDiv {
+    flex-direction: column;
+    text-align: center;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .btnDiv .btn {
+    width: 200%;
+    margin: 5px 0px;
+  }
+  /* Sign Up Page */
+  .sign-up-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sign-up-wrapper .sign-up-container {
+    background: rgba(229, 229, 229, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+  }
+
+  .sign-up-wrapper .sign-up-container img {
+    position: relative;
+    z-index: -1;
+    object-fit: cover !important;
+    width: 100%;
+  }
+
+  .sign-up-wrapper .signup-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 30px;
+    background: white !important;
+  }
+
+  .sign-up-wrapper .signup-content #logoDiv {
+    padding: 30px;
+  }
+
+  .sign-up-wrapper .signup-content #logoDiv img {
+    width: 95px;
+    margin-top: 100px;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv {
+    z-index: 1 !important;
+    background: white;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv .txtGroup {
+    line-height: 25px;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv .txtGroup h6 {
+    font-size: 30px;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv .txtGroup p {
+    font-size: 15px;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv input {
+    width: 350px;
+    max-width: 100% !important;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv input::placeholder {
+    color: rgba(0, 0, 0, 0.24);
+    font-weight: 900;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv #signupBtn {
+    width: 150px;
+    padding: 10px;
+  }
+
+  .sign-up-wrapper .signup-content #formDiv #signupBtn:hover {
+    color: white;
+    background: #e0bd06;
+  }
+
+  .error {
+    color: red;
+    transition: ease all 0.3s;
+    margin: 5px 20px;
+    display: block;
+  }
+
+  #head-container {
+    flex-direction: column;
+    z-index: 1 !important;
+    align-items: center !important;
+  }
+
+  #head-container .logo {
+    width: 12%;
+  }
+
+  #head-container h6 {
+    font-size: 20px;
+  }
+
+  /* Login Page */
+  .login-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .login-wrapper .login-container {
+    width: 100%;
+    position: absolute;
+    overflow: hidden !important;
+  }
+  .login-wrapper .login-container img {
+    object-fit: cover;
+  }
+
+  .login-wrapper .login-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+
+  .login-wrapper .login-content .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background: white;
+    z-index: 1;
+  }
+
+  .login-wrapper .login-content .login-form .textGroup {
+    text-align: center;
+  }
+
+  .login-wrapper .login-content .login-form .textGroup h6 {
+    font-size: 30px;
+  }
+
+  .login-wrapper .login-content .login-form .textGroup p {
+    font-size: 15px;
+  }
+
+  .login-wrapper .login-form input {
+    width: 300px;
+  }
+
+  .login-wrapper .login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.24);
+    font-weight: 900;
+  }
+
+  .login-wrapper .login-form .loginBtn {
+    width: 150px;
+  }
+
+  .staff-container {
+    height: fit-content;
+  }
+
+  .heading {
+    flex-direction: column;
+  }
+
+  .container1 {
+    width: 100%;
+  }
+
+  .container1 img {
+    width: 114.23px;
+    height: 109.68px;
+  }
+
+  .container1 h4 {
+    width: 114.23px;
+    font-size: 20px;
+    margin-left: 8px;
+  }
+
+  .container2 {
+    width: 100%;
+    flex-direction: column;
+  }
+}
